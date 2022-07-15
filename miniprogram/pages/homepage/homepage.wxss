@@ -1,0 +1,33 @@
+/* pages/homepage/homepage.wxss */
+.home-area {
+  text-align:center;
+  margin-top: 20px;
+}
+
+.home-recommend-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  margin-top: 20px;
+}
+
+.home-recommend-house {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-recommend-title {
+  width: 50%;
+  text-align: left;
+}
+
+.home-recommend-content {
+  width: 50%;
+
+}
+
+.home-recommend-image {
+  width: 150px;
+  height: 108px;
+}

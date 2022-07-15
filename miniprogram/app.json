@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/list/list",
+    "pages/details/detail",
+    "pages/template/list-template"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "主页",
+        "iconPath": "/icon/home.jpg",
+        "selectedIconPath": "/icon/home2.jpg"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "房源",
+        "iconPath": "/icon/details.png",
+        "selectedIconPath": "/icon/details.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<template name="listTemplate">
+  <view class="tmpContainer">
+    <!-- 第一行 -->
+    <view class="avatar_date">  
+     <text>{{date}}</text> 
+    </view>
+    <text class="company">{{title}}</text>
+    <image class="contentImg" src="{{detail_img}}"></image>
+    <text class="content">{{detail_content}}</text>
+    <view class="collection_love">
+      <image src="/icon/love.png">star</image>
+      <text>{{love_count}}</text>
+      <image src="/icon/comment2.png">comment</image>
+      <text>{{comment_count}}</text>
+    </view>
+  </view>
+</template>
+
+

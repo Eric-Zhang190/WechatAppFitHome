@@ -1,0 +1,103 @@
+<!--pages/detail/detail.wxml-->
+<!-- <view class="detailContainer">
+  <image class="headImg" src="{{detailObj.detail_img}}"></image>
+  <view class="avatar_date">
+  <text>{{detailObj.date}}</text>
+  </view>
+  <text class="company">{{detailObj.title}}</text>
+
+  <view class="collection_share_container">
+    <view class="collection_share">
+      <image src="/icon/bookmark.png"></image>
+      <image src="/icon/share.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+  <button>转发</button>
+  <text class="content">{{detailObj.detail_content}}</text>
+</view> -->
+
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset" class="form-body">
+      <view class="form-section-title">
+          <text >基本信息(必填)</text>
+        </view>
+      
+      <view class="form-section">
+      
+      <view class="page-section">
+        <view class="page-section-title">房屋类型</view>
+        <radio-group name="房屋类型">
+          <label><radio class="radio-choice" value="公寓"/>公寓</label>
+          <label><radio class="radio-choice" value="联排"/>联排</label>
+          <label><radio class="radio-choice" value="独栋"/>独栋</label>
+        </radio-group>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">卧室数量</view>
+        <radio-group namclass="radio-choice" e="卧室数量">
+          <label><radio class="radio-choice" value="卧室1个"/>1</label>
+          <label><radio class="radio-choice" value="卧室2个"/>2</label>
+          <label><radio class="radio-choice" value="卧室3个"/>3</label>
+        </radio-group> 
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">卫生间数量</view>
+        <radio-group name="卫生间数量">
+          <label><radio class="radio-choice" value="卫生间1个"/>1</label>
+          <label><radio class="radio-choice" value="卫生间2个"/>2</label>
+          <label><radio class="radio-choice" value="卫生间3个"/>3</label>
+        </radio-group>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">独立卫生间</view>
+        <switch  name="是否独立卫生间"/>
+      </view>
+
+      <!-- //-- -->
+      <view class="section">
+      <view class="section__title">出租方式</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker" >
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <!-- //-- -->
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">设施服务</view>
+        <checkbox-group name="设施服务">
+          <label><checkbox value="家电"/>家电</label>
+          <label><checkbox value="床单被套"/>床单被套</label>
+        </checkbox-group>
+      </view>
+
+
+      <view class="page-section">
+        <view class="page-section-title">补充要求</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="补充要求" placeholder="补充要求" />
+            </view>
+          </view>
+        </view>
+      </view>
+      </view>
+
+      <view class="btn-area">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">提交选择</button>
+        <button style="margin: 30rpx 0" formType="reset">重置</button>
+      </view>
+      
+    </form>
+  </view>
+
+</view>
+ 
+

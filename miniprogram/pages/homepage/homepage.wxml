@@ -1,0 +1,41 @@
+<!-- 搜索框 -->
+<view>
+  <image class="fit-img" src="../../images/FitIcon.jpg"></image>
+</view>
+
+<view >
+    <SearchBar id="SearchBar" addflag="{{addflag}}" addimg="{{addimg}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+</view>
+
+<view class="home-area">
+<text>房源推荐</text>
+</view>
+
+  <view class="home-recommend-container">
+    <!-- 第一行 -->
+    <view class="home-recommend-house">
+      <view class="home-recommend-title">  
+      <text>Westchester Park</text> 
+      </view>
+      
+      <view class="home-recommend-content">
+        <image class="home-recommend-image" src="../../images/1.jpg"></image>
+      </view>
+    </view>
+
+    <view class="home-recommend-house">
+      <view class="home-recommend-title">  
+      <text>Greenbelt Station</text> 
+      </view>
+      
+      <view class="home-recommend-content">
+        <image class="home-recommend-image" src="../../images/2.jpg"></image>
+      </view>
+    </view>
+
+  </view>
+
+
+
+
