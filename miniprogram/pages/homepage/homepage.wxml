@@ -29,11 +29,28 @@
       <text>Greenbelt Station</text> 
       </view>
       
-      <view class="home-recommend-content">
+      <view class="home-recommend-content" catchtap="toDetail">
         <image class="home-recommend-image" src="../../images/2.jpg"></image>
       </view>
     </view>
 
+  </view>
+
+
+  <view>
+      <button type="primary" bindtap="getData">点击获取房源数据</button>
+      <view wx:for="{{dataObj}}">{{item.title}} + {{item.detail_content}}</view>
+  </view>
+---------------------------------------------
+
+  <view>
+      <form bindsubmit="btnSubmit">
+        <input name="title" placeholder="请输入房源名称">  </input>
+        <textarea name="detail_content" placeholder="请输入房源内容">  </textarea>
+        <button type="primary" form-type="submit">提交房源</button>
+        <button form-type="reset">重置</button>
+      </form>
+     
   </view>
 
 

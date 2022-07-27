@@ -72,9 +72,29 @@
       <view class="page-section page-section-gap">
         <view class="page-section-title">设施服务</view>
         <checkbox-group name="设施服务">
-          <label><checkbox value="家电"/>家电</label>
+          <label><checkbox value="家电" bindtap="handleTv"/>家电</label>
           <label><checkbox value="床单被套"/>床单被套</label>
         </checkbox-group>
+
+        <view s>
+          <view>
+            <text>电视1</text>
+            <text>image 1</text>
+          </view>
+
+          <view >
+            <text>电视2</text>
+            <text>image 2 </text>
+          </view>
+
+          <view>
+            <text>电视3</text>
+            <text>image 3 </text>
+          </view>
+        
+        </view>
+
+
       </view>
 
 

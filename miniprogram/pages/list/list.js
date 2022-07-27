@@ -33,9 +33,10 @@ Page({
     let index = event.target.dataset.index;
     wx.navigateTo({
       url: '/pages/detail/detail?index=' + index,
-    })({
-      url: '/pages/detail/detail?index=' + index,
     })
+    // ({
+    //   url: '/pages/detail/detail?index=' + index,
+    // })
   },
 
   /**
